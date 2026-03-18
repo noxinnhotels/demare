@@ -353,7 +353,7 @@ textarea.fi2{resize:vertical;min-height:70px;}
       <img id="hero-logo" src="" alt="logo" style="max-height:80px;max-width:180px;object-fit:contain;filter:drop-shadow(0 2px 8px rgba(0,0,0,.3))">
     </div>
     <div class="hotel-label" id="hlabel">HOTEL</div>
-    <h1 id="hnd">Noxinn Deluxe Hotel</h1>
+    <h1 id="hnd">De Mare Family Hotel</h1>
     <div class="hero-sub" id="hsub">Your tropical escape awaits</div>
     <div style="text-align:center"><div class="weather-bar" id="weather-bar" style="display:none" onclick="refreshWeather()">
       <span class="weather-icon" id="w-icon">🌤️</span>
@@ -435,7 +435,7 @@ const ANN_TYPES=[{id:'info',label:'ℹ️ Bilgi'},{id:'warning',label:'⚠️ Uy
 const ANN_ICONS={info:'ℹ️',warning:'⚠️',urgent:'🚨',success:'✅'};
 
 const UI={
-  tr:{restaurants:'Restoranlar',bars:'Barlar',map_tab:'Harita',pools:'Havuz & Spa',events:'Etkinlikler',services:'Genel Hizmetler',gallery:'Galeri',request_tab:'Feedback',info_tab:'Otel Bilgisi',open:'Acik',closed:'Kapali',location:'Konum',phone:'Telefon',hours:'Calisma Saatleri',dress_code:'Kiyafet',reservation:'Rezervasyon',no_items:'Henuz icerik eklenmemis.',hero_sub:'Noxinn Deluxe Hotel',ev_today:'Bugun',ev_upcoming:'Yaklasan',ev_all:'Tumu',ev_none_today:'Bugun etkinlik yok.',rt:'Oneri veya Sikayetiniz',rd:'Geri bildiriminiz degerlendirilecektir.',rl:'Oda No',rm:'Mesajiniz',rs:'Gonder',rts:'Tesekkurler!',rds:'Mesajiniz iletildi.',checkin:'Check-in',checkout:'Check-out',rules:'Otel Kurallari',contact:'Iletisim',call_us:'Arayin',write_wa:'WhatsApp',ann_info:'BILGI',ann_warning:'UYARI',ann_urgent:'ACIL',ann_success:'DUYURU'},
+  tr:{restaurants:'Restoranlar',bars:'Barlar',map_tab:'Harita',pools:'Havuz & Spa',events:'Etkinlikler',services:'Genel Hizmetler',gallery:'Galeri',request_tab:'Feedback',info_tab:'Otel Bilgisi',open:'Acik',closed:'Kapali',location:'Konum',phone:'Telefon',hours:'Calisma Saatleri',dress_code:'Kiyafet',reservation:'Rezervasyon',no_items:'Henuz icerik eklenmemis.',hero_sub:'De Mare Family Hotel',ev_today:'Bugun',ev_upcoming:'Yaklasan',ev_all:'Tumu',ev_none_today:'Bugun etkinlik yok.',rt:'Oneri veya Sikayetiniz',rd:'Geri bildiriminiz degerlendirilecektir.',rl:'Oda No',rm:'Mesajiniz',rs:'Gonder',rts:'Tesekkurler!',rds:'Mesajiniz iletildi.',checkin:'Check-in',checkout:'Check-out',rules:'Otel Kurallari',contact:'Iletisim',call_us:'Arayin',write_wa:'WhatsApp',ann_info:'BILGI',ann_warning:'UYARI',ann_urgent:'ACIL',ann_success:'DUYURU'},
   en:{restaurants:'Restaurants',bars:'Bars',map_tab:'Map',pools:'Pool & Spa',events:'Events',services:'Services',gallery:'Gallery',request_tab:'Feedback',info_tab:'Hotel Info',open:'Open',closed:'Closed',location:'Location',phone:'Phone',hours:'Opening Hours',dress_code:'Dress Code',reservation:'Reservation',no_items:'No content yet.',hero_sub:'Your tropical escape awaits',ev_today:'Today',ev_upcoming:'Upcoming',ev_all:'All',ev_none_today:'No events today.',rt:'Suggestions & Complaints',rd:'Your feedback is appreciated.',rl:'Room Number',rm:'Your Message',rs:'Send',rts:'Thank you!',rds:'Your message has been sent.',checkin:'Check-in',checkout:'Check-out',rules:'Hotel Rules',contact:'Contact',call_us:'Call Us',write_wa:'WhatsApp',ann_info:'INFO',ann_warning:'WARNING',ann_urgent:'URGENT',ann_success:'NOTICE'},
   ru:{restaurants:'Рестораны',bars:'Бары',map_tab:'Карта',pools:'Бассейн и Спа',events:'Мероприятия',services:'Услуги',gallery:'Галерея',request_tab:'Отзывы',info_tab:'Об отеле',open:'Открыто',closed:'Закрыто',location:'Место',phone:'Телефон',hours:'Часы работы',dress_code:'Дресс-код',reservation:'Бронирование',no_items:'Нет контента.',hero_sub:'Ваш рай ждёт',ev_today:'Сегодня',ev_upcoming:'Ближайшие',ev_all:'Все',ev_none_today:'Сегодня нет мероприятий.',rt:'Предложения',rd:'Отзыв принят.',rl:'Номер комнаты',rm:'Сообщение',rs:'Отправить',rts:'Спасибо!',rds:'Сообщение отправлено.',checkin:'Заезд',checkout:'Выезд',rules:'Правила',contact:'Контакты',call_us:'Позвонить',write_wa:'WhatsApp',ann_info:'ИНФО',ann_warning:'ВНИМАНИЕ',ann_urgent:'СРОЧНО',ann_success:'ОБЪЯВЛЕНИЕ'},
   de:{restaurants:'Restaurants',bars:'Bars',map_tab:'Karte',pools:'Pool & Spa',events:'Veranstaltungen',services:'Dienstleistungen',gallery:'Galerie',request_tab:'Feedback',info_tab:'Hotel Info',open:'Geöffnet',closed:'Geschlossen',location:'Ort',phone:'Telefon',hours:'Öffnungszeiten',dress_code:'Kleiderordnung',reservation:'Reservierung',no_items:'Noch kein Inhalt.',hero_sub:'Ihr tropisches Paradies wartet',ev_today:'Heute',ev_upcoming:'Demnächst',ev_all:'Alle',ev_none_today:'Heute keine Veranstaltungen.',rt:'Vorschläge & Beschwerden',rd:'Ihr Feedback wird geschätzt.',rl:'Zimmernummer',rm:'Ihre Nachricht',rs:'Senden',rts:'Danke!',rds:'Ihre Nachricht wurde gesendet.',checkin:'Check-in',checkout:'Check-out',rules:'Hotelregeln',contact:'Kontakt',call_us:'Anrufen',write_wa:'WhatsApp',ann_info:'INFO',ann_warning:'WARNUNG',ann_urgent:'DRINGEND',ann_success:'HINWEIS'},
@@ -449,7 +449,7 @@ let tab='restaurants',atab='dashboard',evView='list',reqFilter='all',evDateFilte
 let editItem=null,editType=null,editCat=null,editAnn=null;
 let isAdmin=false,toastT=null,pendingPhoto=null,darkMode=false,deferredPWA=null;
 let calY=new Date().getFullYear(),calM=new Date().getMonth();
-let C={outlets:[],events:[],services:[],hotelName:'Noxinn Deluxe Hotel',announcements:[],requests:[],config:{}};
+let C={outlets:[],events:[],services:[],hotelName:'De Mare Family Hotel',announcements:[],requests:[],config:{}};
 
 const t=k=>(UI[lang]||UI.en)[k]||k;
 const gn=i=>i.names?.[lang]||i.names?.en||i.names?.tr||Object.values(i.names||{})[0]||'';
@@ -896,7 +896,7 @@ function renderTabSettings(ac){
 function renderHotelInfoAdmin(ac){
   const fields=[
     {key:'hotel_label',label:'Banner Üst Etiket (örn: HOTEL)',placeholder:'HOTEL',icon:'🏷️',textarea:false},
-    {key:'hotel_name',label:'Otel Adı (ana başlık)',placeholder:'Noxinn Deluxe Hotel',icon:'🏨',textarea:false},
+    {key:'hotel_name',label:'Otel Adı (ana başlık)',placeholder:'De Mare Family Hotel',icon:'🏨',textarea:false},
     {key:'hero_subtitle',label:'Alt Yazı (banner)',placeholder:'Your tropical escape awaits',icon:'✨',textarea:false},
     {key:'checkin_time',label:'Check-in Saati',placeholder:'14:00',icon:'🛎️',textarea:false},
     {key:'checkout_time',label:'Check-out Saati',placeholder:'12:00',icon:'🏁',textarea:false},
