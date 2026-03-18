@@ -346,7 +346,7 @@ textarea.fi2{resize:vertical;min-height:70px;}
 <body>
 
 <div id="guest-view">
-  <button class="dark-toggle" id="dark-toggle" onclick="toggleDark()" title="Karanlık mod">🌙</button>
+
   <div class="hero">
     <div class="hero-leaves l1">🌴</div><div class="hero-leaves l2">🌿</div><div class="hero-leaves l3">🍃</div>
     <div id="hero-logo-wrap" style="margin-bottom:12px;display:none">
@@ -1225,17 +1225,7 @@ async function submitReq(){
 const emp=()=>`<div class="empty-state"><div class="e-icon">🌴</div><p>${t('no_items')}</p></div>`;
 
 /* ── DARK MODE ── */
-function toggleDark(){
-  darkMode=!darkMode;
-  document.documentElement.setAttribute('data-theme', darkMode?'dark':'');
-  document.getElementById('dark-toggle').textContent=darkMode?'☀️':'🌙';
-  const meta=document.getElementById('theme-meta');
-  if(meta)meta.content=darkMode?'#060e14':'#0d3d52';
-  try{localStorage.setItem('hd',darkMode?'1':'');}catch(e){}
-}
-function initDark(){
-  try{if(localStorage.getItem('hd')==='1'){darkMode=true;document.documentElement.setAttribute('data-theme','dark');document.getElementById('dark-toggle').textContent='☀️';const m=document.getElementById('theme-meta');if(m)m.content='#060e14';}}catch(e){}
-}
+function initDark(){}
 
 /* ── WEATHER ── */
 const WX_CODES={0:'☀️',1:'🌤️',2:'⛅',3:'☁️',45:'🌫️',48:'🌫️',51:'🌦️',53:'🌦️',55:'🌧️',61:'🌧️',63:'🌧️',65:'🌧️',71:'🌨️',73:'🌨️',75:'❄️',80:'🌦️',81:'🌧️',82:'⛈️',95:'⛈️',96:'⛈️',99:'⛈️'};
